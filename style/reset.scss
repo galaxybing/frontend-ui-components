@@ -1,0 +1,9 @@
+@import "font";
+
+@mixin reset {
+    font-size: 14px;
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    box-sizing: border-box;
+}
