@@ -1,9 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router'
-import cookie from 'js-cookie'
 import './index.scss'
-
-const isBaidu = cookie.get('IS_BAIDU')
 
 export default class Menu extends React.Component {
     constructor(props) {
@@ -28,12 +25,11 @@ export default class Menu extends React.Component {
                         <Link className="item"
                               activeClassName="active"
                               to="/components/mobile">app端</Link>
+                        <a className="item" href="javascript:;">基础图表组件</a>
                         <Link className="item"
                               activeClassName="active"
                               to="/components/common">通用</Link>
-                        {isBaidu !== '0' &&
                         <a className="item" href="https://ant.design/index-cn" target="_blank">ANT DESIGN</a>
-                        }
                     </div>
                     <div className="navbar-right">
                         <Link className="item"
@@ -46,8 +42,8 @@ export default class Menu extends React.Component {
                               activeClassName="active"
                               to="/components/change-log">发布记录</Link>
                         <a className="item"
-                           href="https://github.com/"
-                           target="_blank">内部NPM</a>
+                           href="http://npm.317hu.com/"
+                           target="_blank">伯仲NPM</a>
                     </div>
                 </div>
             </div>

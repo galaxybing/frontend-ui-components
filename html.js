@@ -20,7 +20,7 @@ module.exports = function (args) {
     <meta name="format-detection"
           content="telephone=no">
     ${bundleCss}
-    <title>Boz Design</title>
+    <title>伯仲信息科技-前端组件库</title>
 
     <body>
     <div id='react-dom'></div>

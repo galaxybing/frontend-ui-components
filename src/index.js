@@ -15,7 +15,7 @@ import './github-markdown.scss'
 
 import './all.scss'
 
-document.title = '研发中心-前端开发'
+document.title = '伯仲信息科技-前端组件库'
 
 // if (process.env.NODE_ENV !== 'production') {
 //     const {whyDidYouUpdate} = require('why-did-you-update')

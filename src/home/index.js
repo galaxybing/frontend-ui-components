@@ -7,7 +7,7 @@ export default class Home extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
-        document.title = 'Fit Design'
+        document.title = '伯仲信息科技-前端组件库'
     }
 
     render() {
