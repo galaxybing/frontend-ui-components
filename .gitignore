@@ -32,7 +32,3 @@ test/coverage
 test/jasmine
 lib
 built
-
-# A collection of useful .gitignore templates
-# https://github.com/github/gitignore
-# https://github.com/github/gitignore/tree/master/Global

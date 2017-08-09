@@ -1,6 +1,6 @@
 # React组件库
 
-[gitlab.317hu.com](http://gitlab.317hu.com/) 
+[GitLab](http://gitlab.317hu.com/) 
 
 # 特性
 
@@ -12,14 +12,14 @@
 # 安装
 
 ````bash
-$ npm install fit-[components]
+$ npm install boz-[components]
 ````
 
 # 用例
 
 ````jsx
-import Timeago from 'fit-timeago'
-ReactDOM.render(<Timeago date={new Date()}/>, reactNode)
+import RichTextEditor from 'boz-rich-text-editor'
+ReactDOM.render(<RichTextEditor date={new Date()}/>, reactNode)
 ````
 
 样式是内置的,无需额外引用??
@@ -30,12 +30,12 @@ IE9+
 
 # 链接
 
-- 组件库: https://github.com/fit-component
+- 组件库: https://github.com/frontend-ui-components
 
 *** 
 
 # 初始化项目：
-- ./fit/src/components/doc/readme.md
+- ./src/components/doc/readme.md
   - git clone 出来的 master 包大小为 30.4M，小于此时请注重
   
 # 组件库管理系统的开发模式：
