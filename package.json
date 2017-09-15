@@ -21,7 +21,7 @@
     "update": "npm run babel-scripts && node scripts-babel/module-manage/index.js --update",
     "start-dev": "npm run babel-scripts && npm run demo-init && npm run dll && npm run server & npm run webpack",
     "start": "node server/app.js production",
-    "build": "npm run dll-production && npm run webpack-production",
+    "build": "npm run dll-production && npm run webpack-production && cp -af ./output/* ./dist",
     "push": "npm run babel-scripts && node scripts-babel/module-manage/index.js --push",
     "web": "git push bae master --force",
     "web-init": "git remote add bae https://git.duapp.com/appid26758l0c80",
