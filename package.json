@@ -1,11 +1,11 @@
 {
-  "name": "awesome",
-  "version": "3.0.0",
+  "name": "frontend-ui-components",
+  "version": "1.0.0",
   "description": "组件化开发流程，即插即用",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "http://gitlab.baidu.com/tb-component/awesome.git"
+    "url": "http://gitlab.317hu.com/tb-component/awesome.git"
   },
   "typescript": {
     "definition": "fit.d.ts"

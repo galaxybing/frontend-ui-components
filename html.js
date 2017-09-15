@@ -27,15 +27,6 @@ module.exports = function (args) {
     </body>
     <script src="/static/dll/library.dll.js"></script>
     ${bundleJs}
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?9e6356ee54313747e9bbdb40ecdfa809";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
     </html>
     `
 }
