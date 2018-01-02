@@ -38,7 +38,7 @@ IE9+
 - ./src/components/doc/readme.md
   - git clone 出来的 master 包大小为 30.4M，小于此时请注重
   
-# 组件库管理系统的开发模式：
+# 组件库管理系统的开发模式 - npm run start-dev
 - 当访问 localhost:8081 (module.exports.localPort = 8081)时，需要等待 npm run start-dev ，出现：`webpack: Compiled successfully.`
 
 # 组件库管理系统的生产环境：
