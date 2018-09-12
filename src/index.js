@@ -1,25 +1,2 @@
-import React from 'react'
-import ReactDOM from'react-dom'
-import reactRouter from 'react-router'
-
-import routes from './router.js'
-
-// font-awesome
-import 'font-awesome/css/font-awesome.css'
-
-// highlight
-import 'highlight.js/styles/github.css'
-
-// github-markdown css
-import './github-markdown.scss'
-
-import './all.scss'
-
-document.title = '伯仲信息科技-前端组件库'
-
-// if (process.env.NODE_ENV !== 'production') {
-//     const {whyDidYouUpdate} = require('why-did-you-update')
-//     whyDidYouUpdate(React)
-// }
-
-ReactDOM.render(routes, document.getElementById('react-dom'))
+export { default as i18n } from './locale';
+export { default as Button } from './button';

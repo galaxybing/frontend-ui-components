@@ -1,26 +1,23 @@
 language: node_js
-
-os:
-  - linux
-
-install:
-  - npm install
-
 node_js:
-  - "6.2.1"
-  - "5.0"
-
-before_script:
-  - npm run update -- --travis --token $GH_TOKEN
-  - npm run demo-init -- --travis
-
-script:
-  - npm run build -- --travis
-  - npm test
-
-cache:
-  directories:
-  - node_modules
+  - "6"
 
 env:
-  - GH_TOKEN=GH_TOKEN
+  - TRAVIS_CI=1
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  npm i
+
+script:
+  - npm run lint
+  - npm run build
+  - npm test
+  - npm run typescript-test
+
+notifications:
+  slack: eleme:3Nouwh5OgNugxccCsiFYpUIB
