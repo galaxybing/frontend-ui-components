@@ -53,11 +53,14 @@ export default class Canvas extends React.Component {
       `, {
         presets: ['es2015', 'react']
       }).code
-
+      
       args.push(code) // 最后的一个参数code，压入成为 functionBody - 即一个含有包括函数定义的JavaScript语句的字符串。
 
       new Function(...args).apply(null, argv) // 构造函数，且执行后；渲染至 document.getElementById('${this.playerId}')
                                               // ？？argv即使传进了functionBody 也没有被使用啊
+      /* 是这里起作用，才能让.md 内容里面 <Button 等所有组件列表都能被 Demo 引用
+       * 其中，args 是组件名称键数组； argv 是组件实例对象
+       */
 
       this.source[2] = value
     }).catch((err) => {

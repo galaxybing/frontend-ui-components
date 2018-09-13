@@ -10,7 +10,7 @@ new WebpackDevServer(webpack({
     'webpack-dev-server/client?http://localhost:3001',
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
-    './index'
+    './index-jsx'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -20,7 +20,7 @@ new WebpackDevServer(webpack({
     new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.tsx']
   },
   module: {
     rules: [
@@ -32,6 +32,20 @@ new WebpackDevServer(webpack({
           path.join(__dirname, '../src'),
           path.join(__dirname, '../libs')
         ]
+      },
+      // Compile .tsx?
+      {
+        test: /\.(ts|tsx)$/,
+        include: path.join(__dirname, '../src'),
+        use: [
+          {
+            loader: require.resolve('ts-loader'),
+            options: {
+              // disable type checker - we will use it in fork plugin
+              transpileOnly: true,
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,

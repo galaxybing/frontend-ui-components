@@ -95,31 +95,6 @@ render() {
 ```
 :::
 
-### 按钮组
-
-以按钮组的方式出现，常用于多项类似操作。
-
-:::demo 使用`Button.Group`标签来嵌套你的按钮。
-
-```js
-render() {
-  return (
-    <div>
-      <Button.Group>
-          <Button type="primary" icon="arrow-left">上一页</Button>
-          <Button type="primary">下一页<i className="el-icon-arrow-right el-icon-right"></i></Button>
-      </Button.Group>
-      <Button.Group>
-          <Button type="primary" icon="edit"></Button>
-          <Button type="primary" icon="share"></Button>
-          <Button type="primary" icon="delete"></Button>
-      </Button.Group>
-    </div>
-  )
-}
-```
-:::
-
 ### 加载中
 
 点击按钮后进行数据加载操作，在按钮上显示加载状态。

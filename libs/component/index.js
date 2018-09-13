@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 export default class Component extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   classNames(...args) {
     return classnames(args);
   }

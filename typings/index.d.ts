@@ -43,6 +43,46 @@ declare namespace ElementReact {
   }
 }
 
+declare namespace ElementReactLibs {
+  type dateType = Date | string | null 
+  type SelectionMode = 'year' | 'month' | 'week' | 'day'
+  interface ComponentProps<T> {
+    className?: string
+    style?: React.CSSProperties
+  }
+  class Component<P, S> extends React.Component<P, S> {
+    classNames?(...args: any[]): any
+    className?(...args: any[]): any
+    style?(agrs?: any): any
+  }
+  interface DatePickerBaseProps extends ComponentProps<{}> {
+    align?: 'left' | 'center' | 'right'
+    format?: string
+    isShowTrigger?: boolean
+    isReadOnly?: boolean
+    isDisabled?: boolean
+    placeholder?: string
+    onFocus?(self?: any): void
+    onBlur?(self?: any): void
+    onChange?(value?: any): void
+    value?: dateType | dateType[]
+  }
+  interface DatePanelProps extends DatePickerBaseProps {
+    value?: dateType | dateType[]
+    onPick?: (date: Date) => void
+    isShowTime?: boolean
+    showWeekNumber?: boolean
+    format?: string
+    shortcuts?: any[]
+    selectionMode?: SelectionMode
+    disabledDate?(date?: Date, type?: SelectionMode): boolean
+    firstDayOfWeek?: number
+    getPopperRefElement?: any
+    popperMixinOption?: any
+  }
+  class DatePickerBaseComponet<P, S> extends React.Component<P, S> { }
+}
+
 declare module "@317hu/src/locale/lang/bg" {
   const lang: ElementReact.I18nLang
   export default lang

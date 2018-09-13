@@ -35,7 +35,7 @@ module.exports = {
     })
   ]),
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.tsx']
   },
   module: {
     rules: [
@@ -47,6 +47,23 @@ module.exports = {
           path.join(basePath, 'src'),
           path.join(basePath, 'libs')
         ]
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        include: [
+          path.join(basePath, 'site'),
+          path.join(basePath, 'src'),
+          path.join(basePath, 'libs')
+        ],
+        use: [
+          {
+            loader: require.resolve('ts-loader'),
+            options: {
+              // disable type checker - we will use it in fork plugin
+              transpileOnly: true,
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
