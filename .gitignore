@@ -5,6 +5,8 @@ Thumbs.db
 npm-debug.log
 node_modules
 
+/src/*
+!/src/README.md
 /dist
 /next.js
 

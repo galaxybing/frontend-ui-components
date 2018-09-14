@@ -237,7 +237,7 @@ export default class App extends React.Component {
             <div className="footer-main-sprite">
               <div className="footer-main">
                 <ul className="footer-mod-list">
-                  <li><h2 className="tit">相关链接</h2></li>
+                  <li><div className="tit">相关链接</div></li>
                   <li>前端开发<a href="http://npm.intra.317hu.com/" target="_blank"><i className="attachment">&nbsp;&nbsp;- 组件仓库</i></a></li>
                   <li>API<a href="http://api.317hu.com/" target="_blank"><i className="attachment">&nbsp;&nbsp;- 接口管理平台</i></a></li>
                   <li>后台管理系统<a href="http://hospital.317hu.com/hospital-admin/317hu-login/login.html" target="_blank"><i className="attachment">&nbsp;&nbsp;- 医院端</i></a></li>
@@ -247,13 +247,13 @@ export default class App extends React.Component {
               </div>
               <div className="footer-main">
                 <ul className="footer-mod-list">
-                  <li><h2 className="tit">帮助</h2></li>
+                  <li><div className="tit">帮助</div></li>
                   <li>Gitlab<a href="http://gitlab.317hu.com/dev-web/frontend-ui-components/wikis/home" target="_blank"><i className="attachment">&nbsp;&nbsp;- 前端组件管理平台</i></a></li>
                 </ul>
               </div>
               <div className="footer-main">
                 <ul className="footer-mod-list">
-                  <li><h2 className="tit">资源</h2></li>
+                  <li><div className="tit">资源</div></li>
                   <li>Algolia<a href="https://www.algolia.com/doc/api-client/javascript/getting-started/" target="_blank"><i className="attachment">&nbsp;&nbsp;- Doc</i></a></li>
                   <li>Marked<a href="https://github.com/markedjs/marked" target="_blank"><i className="attachment">&nbsp;&nbsp;- markedjs</i></a></li>
                   <li>Babel<a href="https://github.com/Daniel15/babel-standalone/issues" target="_blank"><i className="attachment">&nbsp;&nbsp;- babel-standalone</i></a></li>

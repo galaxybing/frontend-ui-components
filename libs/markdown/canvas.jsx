@@ -9,7 +9,6 @@ import Editor from '../editor'
 export default class Canvas extends React.Component {
   constructor(props) {
     super(props)
-
     this.playerId = `${parseInt(Math.random() * 1e9).toString(36)}` // 计算元素容器层 id
     this.document = this.props.children.match(/([^]*)\n?(```[^]+```)/)
     this.description = marked(this.document[1])
@@ -19,7 +18,6 @@ export default class Canvas extends React.Component {
       showBlock: false
     }
   }
-
   componentDidMount() {
     this.renderSource(this.source[2])
   }
@@ -31,13 +29,16 @@ export default class Canvas extends React.Component {
   }
 
   renderSource(value) {
-    import('../../src').then(Element => {
+    // 直接从 /src/index.js 引用，而不是： import(`../../src/${this.props.name}/src/components/`).then(Element => {
+    import(`../../src/`).then(Element => {
       const args = ['context', 'React', 'ReactDOM'] // 函数对象的标识符
       const argv = [this, React, ReactDOM] // 参数值对象
 
       for (const key in Element) {
-        args.push(key)
-        argv.push(Element[key])
+        //if (key !== 'default') { // 过滤掉，组件 export default class  内的default属性名称
+          args.push(key)
+          argv.push(Element[key])
+        //};
       }
       return {
         args,
@@ -71,6 +72,7 @@ export default class Canvas extends React.Component {
   }
 
   render() {
+
     return (
       <div className={`demo-block demo-box demo-${this.props.name}`}>
         <div className="source" id={this.playerId} />

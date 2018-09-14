@@ -10,6 +10,8 @@ export default {
       // 'color': require('./color'),
       // 'typography': require('./typography'),
       // 'icon': require('./icon'),
+      'maintemplatelayout': require('./maintemplatelayout'),
+      'rangedatepicker': require('./rangedatepicker'),
       'button': require('./button')
     },
     // 'Web': {

@@ -41,6 +41,7 @@ declare namespace ElementReact {
   export class Button extends ElementReactLibs.Component<ButtonProps, {}> {
     static Group: typeof ButtonGroup
   }
+
 }
 
 declare namespace ElementReactLibs {
