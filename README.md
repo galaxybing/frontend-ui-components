@@ -1,4 +1,6 @@
-# 前端组件管理平台
+# [前端组件管理平台](http://monet.317hu.com/#/zh-CN/quick-start)
+
+monet - 莫奈
 
 # 操作指南
 
@@ -83,3 +85,4 @@ $ npm run postpublish
 
 # bisheng + ssr
 
+# monet.317hu.com
