@@ -16,12 +16,12 @@ body {
 .app {
   .container {
     width: 100%;
-    padding: 0 30px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
     left: 0;
     top: 0;
+    z-index: 2;
   }
 
   .header {
@@ -41,7 +41,9 @@ body {
     position: relative;
     z-index: 10;
     max-width: 100%;
-
+    .container {
+      padding: 0 30px;
+    }
     h1 {
       position: relative;
       margin: 0;
@@ -131,7 +133,6 @@ body {
       }
     }
   }
-
   .main {
     padding-top: 30px;
     padding-bottom: 95px;
@@ -141,6 +142,10 @@ body {
     background-color: #000;
     color: #ffffff;
     width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
     .footer-main-sprite {
       width: 70%;
       margin: 0 auto;
@@ -217,8 +222,9 @@ body {
 .content {
   display: inline-block;
   vertical-align: top;
-  width: 74%;
+  width: 70%;
   margin-left: 4%;
+  margin-right: 4%;
   h2 {
     font-size: 28px;
     color: #1f2d3d;
@@ -293,7 +299,7 @@ body {
       line-height: 40px;
       height: 40px;
       margin: 0;
-      padding: 0;
+      padding-left: 30px;
       text-decoration: none;
       display: block;
       position: relative;
@@ -308,17 +314,29 @@ body {
         height: 40px;
         line-height: 40px;
         font-size: 13px;
-        padding-left: 24px;
+        padding-left: 54px;
         &:hover {
           color: #20a0ff;
         }
+      }
+      a.active {
+        background-color: #eff7fd;
+      }
+      a.active:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        content: "\20";
+        display: block;
+        border-right: 3px solid #1890ff;
       }
     }
   }
   .nav-group__title {
     font-size: 12px;
     color: #99a9bf;
-    padding-left: 8px;
+    padding-left: 38px;
     line-height: 26px;
     margin-top: 10px;
   }
@@ -367,7 +385,7 @@ body {
 .side-division {
   position: absolute;
   display: inline-block;
-  width: 4%; /* 10% */
+  width: 1px; /* 10% */
   border-left: 1px solid #e3e3e3;
   height: calc(100% - 30px);
 }
@@ -375,7 +393,7 @@ body {
   border: solid 1px #eaeefb;
   border-radius: 4px;
   transition: .2s;
-
+  margin-bottom: 24px;
   &.hover {
     box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);
   }

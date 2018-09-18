@@ -2,8 +2,8 @@ import Markdown from '../../../libs/markdown';
 
 import './style.scss';
 
-export default class RangeDatePicker extends Markdown {
+export default class MainTemplateLayout extends Markdown {
   document(locale) {
-    return require(`../../docs/${locale}/maintemplatelayout.md`);
+    return require(`../../../src/@317hu/mainTemplateLayout/README.md`);
   }
 }

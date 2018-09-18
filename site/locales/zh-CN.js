@@ -40,14 +40,16 @@ module.exports = {
     'tabs': 'Tabs 标签页',
     'breadcrumb': 'Breadcrumb 面包屑',
     'dropdown': 'Dropdown 下拉菜单',
-    'rangedatepicker': 'RangeDatePicker 双日期时间',
+    'rangedatepicker': 'RangeDatePicker 日期区间选择器',
     'steps': 'Steps 步骤',
     'dialog': 'Dialog 对话框',
     'tooltip': 'Tooltip 文字提示',
     'popover': 'Popover 弹出框',
     'card': 'Card 卡片',
     'carousel': 'Carousel 走马灯',
-    'collapse': 'Collapse 折叠面板'
+    'collapse': 'Collapse 折叠面板',
+    
+    'CascaderCheckboxSelect': 'CascaderCheckboxSelect 组织树'
   },
   misc: {
     'guide': '指南',

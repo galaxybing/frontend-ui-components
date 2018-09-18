@@ -6,27 +6,17 @@ export default {
   },
   components: {
     'Basic': {
-      // 'layout': require('./layout'),
-      // 'color': require('./color'),
-      // 'typography': require('./typography'),
-      // 'icon': require('./icon'),
       'maintemplatelayout': require('./maintemplatelayout'),
-      'rangedatepicker': require('./rangedatepicker'),
-      'button': require('./button')
     },
-    // 'Web': {
-    //   'form': require('./form')
-    // },
-    // 'App': {
-    //   'table': require('./table')
-    // },
-    // 'Others': {
-    //   'dialog': require('./dialog'),
-    //   'tooltip': require('./tooltip'),
-    //   'popover': require('./popover'),
-    //   'card': require('./card'),
-    //   'carousel': require('./carousel'),
-    //   'collapse': require('./collapse')
-    // }
+    'Web': {
+      'rangedatepicker': require('./rangedatepicker'),
+      'CascaderCheckboxSelect': require('./CascaderCheckboxSelect'),
+    },
+    'App': {
+      //
+    },
+    'Others': {
+      //
+    }
   }
 }

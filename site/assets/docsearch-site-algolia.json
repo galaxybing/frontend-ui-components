@@ -1,71 +1,71 @@
 [{
   "hierarchy": {
-    "lvl2": "提供了一套常用的图标集合。",
-    "lvl3": null,
-    "lvl0": "Components",
-    "lvl1": "Icon 图标",
-    "lvl6": null,
-    "lvl4": null,
-    "lvl5": null
-  },
-  "url": "/#/zh-CN/icon",
-  "content": null,
-  "anchor": "Icon",
-  "objectID": "3811540372"
-}, {
-  "hierarchy": {
-    "lvl2": "安装",
-    "lvl3": "推荐使用 npm 的方式安装，它能更好地和webpack打包工具配合使用。",
     "lvl0": "Documentation",
-    "lvl1": "快速上手",
-    "lvl6": null,
+    "lvl1": "quick-start 快速上手",
+    "lvl2": "快速上手 命令工具安装：npm --registry=http://registry.npm.intra.317hu.com/ install npm-317hu -g",
     "lvl4": null,
-    "lvl5": null
+    "lvl5": null,
+    "lvl3": null,
+    "lvl6": null
   },
   "url": "/#/zh-CN/quick-start",
   "content": null,
-  "anchor": "安装",
-  "objectID": "3811562762"
+  "anchor": "quick-start",
+  "objectID": "0"
 }, {
   "hierarchy": {
-    "lvl2": "示例 ",
-    "lvl3": "典型表单 ",
     "lvl0": "Documentation",
-    "lvl1": "Form 表单",
-    "lvl6": null,
+    "lvl1": "国际化",
+    "lvl2": "组件内部默认使用中文，若希望使用其他语言，则需要进行多语言设置",
     "lvl4": null,
-    "lvl5": null
+    "lvl5": null,
+    "lvl3": null,
+    "lvl6": null
   },
-  "url": "/#/zh-CN/form",
+  "url": "/#/zh-CN/i18n",
   "content": null,
-  "anchor": "典型表单",
-  "objectID": "3811360642"
+  "anchor": "i18n",
+  "objectID": "1"
 }, {
   "hierarchy": {
-    "lvl2": "基础用法",
-    "lvl3": null,
     "lvl0": "Components",
-    "lvl1": "Button 按钮",
-    "lvl6": null,
+    "lvl1": "CascaderCheckboxSelect 组织树",
+    "lvl2": "`@317hu/CascaderCheckboxSelect` 用于医院内部组织结构的，按院区、科室、病区三者间的关联关系进行层级选择",
     "lvl4": null,
-    "lvl5": null
+    "lvl5": null,
+    "lvl3": null,
+    "lvl6": null
   },
-  "url": "/#/zh-CN/button",
+  "url": "/#/zh-CN/CascaderCheckboxSelect",
   "content": null,
-  "anchor": "基础用法",
-  "objectID": "3811540392"
+  "anchor": "CascaderCheckboxSelect",
+  "objectID": "2"
 }, {
   "hierarchy": {
-    "lvl2": "将信息聚合在卡片容器中展示。",
-    "lvl3": null,
     "lvl0": "Components",
-    "lvl1": "Card 卡片",
-    "lvl6": null,
+    "lvl1": "MainTemplateLayout 主导航",
+    "lvl2": "`@317hu/MainTemplateLayout` 为317护后台管理系统的统一主导航组件，各项目负责人，应该按时更新",
     "lvl4": null,
-    "lvl5": null
+    "lvl5": null,
+    "lvl3": null,
+    "lvl6": null
   },
-  "url": "/#/zh-CN/card",
+  "url": "/#/zh-CN/maintemplatelayout",
   "content": null,
-  "anchor": "Card",
-  "objectID": "3811540562"
+  "anchor": "MainTemplateLayout",
+  "objectID": "3"
+}, {
+  "hierarchy": {
+    "lvl0": "Components",
+    "lvl1": "RangeDatePicker 日期区间选择器",
+    "lvl2": "`@317hu/rangedatepicker` 用于日历开始和结束日期、时间的按区间选择输入，其中时间部分可配置为是否显示",
+    "lvl4": null,
+    "lvl5": null,
+    "lvl3": null,
+    "lvl6": null
+  },
+  "url": "/#/zh-CN/rangedatepicker",
+  "content": null,
+  "anchor": "rangedatepicker",
+  "objectID": "4"
 }]
