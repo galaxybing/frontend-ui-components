@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from '../../node_modules/react-dom'
 import PropTypes from 'prop-types'
 import marked from 'marked'
 import { transform } from 'babel-standalone'
