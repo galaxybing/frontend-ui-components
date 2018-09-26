@@ -14,5 +14,6 @@
       "presets" : [["es2015", { "modules": false, "loose": true }], "stage-1", "react"],
       "plugins" : [["transform-runtime", { "polyfill": false }]]
     }
-  }
+  },
+  "compact": false,
 }

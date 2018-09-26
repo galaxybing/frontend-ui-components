@@ -11,6 +11,7 @@ export default {
     'Web': {
       'rangedatepicker': require('./rangedatepicker'),
       'CascaderCheckboxSelect': require('./CascaderCheckboxSelect'),
+      'Editor135Qiniu': require('./Editor135Qiniu'),
     },
     'App': {
       //

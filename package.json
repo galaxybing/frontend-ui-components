@@ -37,8 +37,8 @@
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.53",
     "@types/prop-types": "15.5.2",
-    "@types/react": "~16.0.34",
-    "@types/react-dom": "^16.0.3",
+    "@types/react": "./node_modules/@types/react",
+    "@types/react-dom": "./node_modules/@types/react-dom",
     "@types/react-redux": "^5.0.14",
     "autoprefixer": "7.1.2",
     "axios": "^0.17.1",
@@ -103,9 +103,9 @@
     "prismjs": "^1.8.4",
     "promise": "8.0.1",
     "raw-loader": "^0.5.1",
-    "react": "^16.2.0",
+    "react": "./node_modules/react",
     "react-dev-utils": "^4.0.1",
-    "react-dom": "^16.2.0",
+    "react-dom": "./node_modules/react-dom",
     "react-hot-loader": "^3.1.3",
     "react-redux": "^5.0.6",
     "react-scroll-up": "^1.3.3",
@@ -160,5 +160,8 @@
       "\\.(css|scss)$": "identity-obj-proxy"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/tests/jest/config.js"
+  },
+  "@317huDependencies": {
+    "@317hu/BOZ": "^0.0.1"
   }
 }

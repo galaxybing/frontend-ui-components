@@ -49,7 +49,8 @@ module.exports = {
     'carousel': 'Carousel 走马灯',
     'collapse': 'Collapse 折叠面板',
     
-    'CascaderCheckboxSelect': 'CascaderCheckboxSelect 组织树'
+    'CascaderCheckboxSelect': 'CascaderCheckboxSelect 组织树',
+    'Editor135Qiniu': 'Editor135Qiniu 富文本135编辑器'
   },
   misc: {
     'guide': '指南',
