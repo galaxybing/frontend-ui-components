@@ -49,7 +49,8 @@ $ npm run postpublish
 - tsc配置接入
 - 热更新
 - `Unable to find node on an unmounted component.`
-  - 要使用到 组件演示管理平台时，需要移除掉子组件包(frontend-ui-startkit)的 react + react-dom 的依赖引用（node_modules/）；
+  - 要使用到 组件演示管理平台时，需要移除掉子组件包(frontend-ui-startkit)的 react-dom 的依赖引用（node_modules/）；
+    - 其他 移除可减小构建后包的大小：react + ...
 
 ## Alogia静态点搜索支持
 

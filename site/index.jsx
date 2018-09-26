@@ -1,5 +1,5 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from '../node_modules/react';
+import { render } from '../node_modules/react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import 'core-js';
