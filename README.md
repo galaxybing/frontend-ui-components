@@ -1,8 +1,10 @@
-# [前端组件管理平台](http://monet.317hu.com/#/zh-CN/quick-start)
+# 前端组件管理平台
+
+开始使用 - http://monet.317hu.com/#/zh-CN/quick-start
 
 monet - 莫奈
 
-# 操作指南
+### 操作指南
 
 ```bash
 $ npm run start
@@ -14,19 +16,22 @@ $ npm run prepubl¡sh # 预发布仓库
 $ npm run postpublish
 ```
 
-# 开发记录
+### 开发记录
 
-### 管理平台的自带依赖包引入：
-- moment
+#### 管理平台的自带依赖包引入：
+moment
   - /src/index.js
     - export { default as moment } from 'moment';
-- local
+
+local
   - /src/index.js
     - export { default as i18n } from './locale';
-- react - 这里要求移除掉子组件内部的 node_modules/* react和react-dom
-- react-dom
 
-## 切换至英文 文档描述 操作：
+react - 这里要求移除掉子组件内部的 node_modules/* react和react-dom
+
+react-dom
+
+#### 切换至英文 文档描述 操作：
 
 - this.setLocale.bind(this, 'en-US')
 - /site/page.jsx
@@ -39,12 +44,12 @@ $ npm run postpublish
 </li>
 ```
 
-## ui.317hu.com ？？
+#### ui.317hu.com ？？
 
 - http://galaxyw.317hu.com:3001/#/zh-CN/rangedatepicker
 - http://historyroute.317hu.com/#/zh-CN/rangedatepicker
 
-## typescript 语法接入
+#### typescript 语法接入
 
 - tsc配置接入
 - 热更新
@@ -52,18 +57,17 @@ $ npm run postpublish
   - 要使用到 组件演示管理平台时，需要移除掉子组件包(frontend-ui-startkit)的 react-dom 的依赖引用（node_modules/）；
     - 其他 移除可减小构建后包的大小：react + ...
 
-## Alogia静态点搜索支持
+#### Alogia静态点搜索支持
 
-- 更新，并上传 docsearch-site-algolia.json 
+- 更新，并上传 docsearch-site-algolia.json
 
-## npm script 脚本 + python 流程控制，生成知识脑图；
+#### npm script 脚本 + python 流程控制，生成知识脑图；
 
 - 拉取 @317hu 组件库包，集中构建 <- git clone
 - npm run compile
 - cnpm run publish
 
-
-# 内容更新步聚
+## 更新步聚
 
 1. site/pages
   - ./index.jsx                                                    左侧导航菜单 + 显示配置
@@ -80,10 +84,10 @@ $ npm run postpublish
     - [![npm317 version](https://img.shields.io/badge/npm317-1.0.3-green.svg)](http://npm.intra.317hu.com/package/@317hu/rangedatepicker)
 
 4. src/@317hu/*    
-                           
+
 5. src/index.js                                                   声明组件名称
   - export { default as [`组件名称`] } from './[`组件名称`]/src/components'
 
-# bisheng + ssr
+## 参考资料
 
-# monet.317hu.com
+bisheng + ssr
